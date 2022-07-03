@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" verbose="0">
+  <parameter name="browser" value="chromess"/>
+  <parameter name="URL" value="https://qualitystream-academy.com/"/>
+  <test parallel="methods" name="Test on Chrome(failed)">
+    <parameter name="browser" value="chromess"/>
+    <classes>
+      <class name="Test.SolicitarFirmasTest">
+        <methods>
+          <include name="seleccionarCamposFirma"/>
+          <include name="seleccionarTramite"/>
+          <include name="nuevaFirma"/>
+          <include name="setUpBeforeClass"/>
+        </methods>
+      </class> <!-- Test.SolicitarFirmasTest -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
