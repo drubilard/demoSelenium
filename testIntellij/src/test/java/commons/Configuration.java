@@ -20,13 +20,9 @@ public class Configuration {
 	public static final String uploadTramiteFilePath = System.getProperty("user.dir") + File.separator + "tramites"
 			+ File.separator;
 	public static final int timeout = 10;
-	public static final String APP_URL = "http://test.revu.tuxidev.cl:8980/"; // url de aplicacion revu
+	public static final String APP_URL = "https://pyme.test-nubox.com/"; // url de aplicacion nubox-pyme
 	public static final String USER = "drubilar@getnada.com";
-	public static final String PASSWORD = "123456Aa";
-	public static final String NOMBRENUEVOFIRMANTE = "Felipe Vargas";
-	public static final String RUTMANDANTE = "11.111.111-1";
-	public static final String RUTMANDATARIO = "22.222.222-2";
-	public static final String RUTNUEVOFIRMANTE = "16198385-3";
+	public static final String PASSWORD = "123456aa";
 
 	public static String DRIVER_DIR = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
 			+ File.separator + "resources" + File.separator + "drivers" + File.separator; // ruta del recurso para
@@ -51,7 +47,7 @@ public class Configuration {
 	public static WebDriver createChromeDriver() { // funcion que genera la property adecuada apra chrome
 		// System.setProperty("webdriver.chrome.driver",
 		// modifyifWindows(CHROME_DRIVER));
-		WebDriverManager.chromedriver().version("102").setup();
+		WebDriverManager.chromedriver().setup();
 		return new ChromeDriver();
 	}
 
@@ -76,7 +72,7 @@ public class Configuration {
 
 		// System.setProperty("webdriver.chrome.driver",
 		// modifyifWindows(CHROME_DRIVER));
-		WebDriverManager.chromedriver().version("101").setup();
+		WebDriverManager.chromedriver().setup();
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 
 		chromePrefs.put("profile.default_content_settings.popups", 0);
@@ -94,7 +90,7 @@ public class Configuration {
 
 		// System.setProperty("webdriver.chrome.driver",
 		// modifyifWindows(CHROME_DRIVER));
-		WebDriverManager.chromedriver().version("101").setup();
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		// options.addArguments("--headless");
 		options.addArguments("--disable-gpu");

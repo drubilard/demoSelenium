@@ -3,12 +3,12 @@
 <suite thread-count="2" parallel="methods" name="Suite">
 	<parameter name="URL" value="https://qualitystream-academy.com/" />
 	<test name="Test on Chrome">
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browser" value="chrome"/>
 		<classes>
-			<class name="Test.SolicitarFirmasTest" />
+			<class name="Test.LoginTest"/>
 		</classes>
 	</test>
-	<!--test name="Test on Firefox">
+	<!--test name="Test on Firefox">|4
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="Test.SolicitarFirmasTest" />
